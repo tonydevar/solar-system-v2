@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Explorer v2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>🌌 Solar System Explorer</h1>
+        <p>Click on any planet to learn more about it</p>
+    </header>
+
+    <main>
+        <div class="solar-system">
+            <!-- Sun -->
+            <div class="sun" data-planet="sun">
+                <div class="planet sun"></div>
+                <span class="label">Sun</span>
+            </div>
+
+            <!-- Planets -->
+            <div class="orbit" data-planet="mercury">
+                <div class="planet-container">
+                    <div class="planet mercury"></div>
+                    <span class="label">Mercury</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="venus">
+                <div class="planet-container">
+                    <div class="planet venus"></div>
+                    <span class="label">Venus</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="earth">
+                <div class="planet-container">
+                    <div class="planet earth"></div>
+                    <span class="label">Earth</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="mars">
+                <div class="planet-container">
+                    <div class="planet mars"></div>
+                    <span class="label">Mars</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="jupiter">
+                <div class="planet-container">
+                    <div class="planet jupiter"></div>
+                    <span class="label">Jupiter</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="saturn">
+                <div class="planet-container">
+                    <div class="planet saturn"></div>
+                    <span class="label">Saturn</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="uranus">
+                <div class="planet-container">
+                    <div class="planet uranus"></div>
+                    <span class="label">Uranus</span>
+                </div>
+            </div>
+
+            <div class="orbit" data-planet="neptune">
+                <div class="planet-container">
+                    <div class="planet neptune"></div>
+                    <span class="label">Neptune</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Panel -->
+        <div class="info-panel" id="infoPanel">
+            <button class="close-btn" id="closeBtn">×</button>
+            <div id="planetContent"></div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
